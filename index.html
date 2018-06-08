@@ -22,6 +22,11 @@
 			margin: 0px;
 			box-sizing: border-box;
 		}
+		.navbar{
+			background-image: url(images/bg.jpeg);
+			background-size: cover;
+			background-position: top;
+		}
 		header{
 			background-image: url(images/bg.jpeg);
 			background-size: cover;
@@ -105,17 +110,23 @@
 	</style>
 </head>
 <body bgcolor="black">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+		  <img class="navbar-brand" src="images/latam_logo.png">
+	    </div>
+	      
+	      <ul class="nav navbar-nav navbar-right">
+		    <li><a href="#">Equipo</a></li>
+		    <li><a href="#">Blog</a></li>
+		    <li><a href="#">Contacto</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
 	<div style="margin: auto;width: 800px;">
 		<header>
-			<div style="float: left">
-				<img height="20px" src="images/latam_logo.png">
-			</div>
-			<ul class="menu">
-			    <li><a href="#">Equipo</a></li>
-			    <li><a href="#">Blog</a></li>
-			    <li><a href="#">Contacto</a></li>
-			    <div style="clear: both"></div>
-			</ul>
 			<div class="bandacentrada" style="margin-top: 80px;">
 				<p style="font-size: 25px">COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</p>
 				<a class="boton" href="" target="_blank">Comienza acá!</a>
