@@ -16,107 +16,23 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-	<style type="text/css">
-		*{
-			margin: 0px;
-			box-sizing: border-box;
-		}
-		.navbar{
-			background-image: url(images/bg.jpeg);
-			background-size: cover;
-			background-position: top;
-			border-bottom: 0;
-		}
-		header{
-			background-image: url(images/bg.jpeg);
-			background-size: cover;
-			background-position: center;
-			color: white;
-			padding: 10px;
-		}
-		.menu{
-			padding: 10px;
-			float: right;
-		}
-        ul.menu {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-		}
-        ul.menu li {
-            box-sizing: border-box;
-            float: right;
-        }
-        ul.menu li a {
-            color: #FFF;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-        }
-		.content{
-			padding: 10px;
-			float: right;
-			width: 75%;
-		}
-
-		footer{
-			background-color: grey;
-			color: white;
-			padding: 10px;
-			clear: both
-		}
-		p{
-			padding: 10px;
-		}
-		.boton {
-			padding: 5px; /*espacio alrededor texto*/
-			background-color: royalblue; /*color botón*/
-			color: white; /*color texto*/
-			text-decoration: none; /*decoración texto*/
-			font-size: 15px;
-			border-radius: 5px; /*bordes redondos*/
-		}
-		#botonverde{
-			background-color: limegreen;
-		}
-		.section1{
-			background-color: white;
-			color: black;
-			padding-top: 30px;
-			height: auto;
-			font-size: 10px;
-			text-align: center;
-		}
-		.bandacentrada{
-			text-align: center;width: 50%; margin-left: 25%;
-		}
-		.bandaancha{
-			background-color: whitesmoke; width: 100%;
-			height: 180px;
-			border-color: lightgrey;border-width: 1px;
-			border-top-style: solid;
-			border-bottom-style: solid;
-			padding-top: 40px;
-		}
-		.contacto{
-			float: left;
-			box-sizing: content-box;
-		}
-		.subscribe{
-
-			float: left;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body bgcolor="black">
 	<nav class="navbar navbar-default navbar-fixed-top ">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
 		  <img class="navbar-brand" src="images/latam_logo.png">
 	    </div>
 	      
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
 		    <li><a href="#">Equipo</a></li>
 		    <li><a href="#">Blog</a></li>
@@ -126,57 +42,72 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 	<header>
-		<div class="container">
-			<div class="bandacentrada" style="margin-top: 80px;">
-				<p style="font-size: 25px">COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</p>
+		<div class="container" >
+			<div class="col-md-6 col-md-offset-3" style="text-align: center;">
+				<p class="title">COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</p>
 				<a class="boton" href="" target="_blank">Comienza acá!</a>
 				<a class="boton" id="botonverde" href="" target="_blank">Más info</a>
-				<p style="font-size: 10px">Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y Tú puedes ser uno!</p>
+				<p>Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y Tú puedes ser uno!</p>
 			</div>
 		</div>
 	</header>
-	<div style="margin: auto;width: 800px;">
-		<div class="section1" >
-			<div  class="bandacentrada">
-				<b>EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</b>
+
+	<section class="section1" >
+		<div class="container" >
+			<div  class="col-md-6 col-md-offset-3">
+						<b>EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</b>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+			</div>
+
+			<div class="col-md-6 col-md-offset-3">
+				<img width="50%" src="images/viewing-gallery-for-happy-people.png">
+			</div>
+		</div>
+	</section>
+	<section class="bandaancha section1">
+		<div class="container">
+			<div  class="col-md-6 col-md-offset-3">
+				<b>SOLICITA INFORMACIÓN E INSCRIBETE</b>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</p>
-			</div>
-			<img width="25%" src="images/viewing-gallery-for-happy-people.png">
-			<div class="bandaancha">
-				<div  class="bandacentrada">
-					<b>SOLICITA INFORMACIÓN E INSCRIBETE</b>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-					<a class="boton" href="" target="_blank">Inscribete!</a>
-					<p>Vive la experiencia Desafío Latam!</p>		
-				</div>
-			</div>
-
-			<div  style="padding: 40px;">
-				<div class="contacto">
-					<h3>Contacto</h3>
-					<b>Desafio Latam</b>
-					<p>Ezequias Allende 2361</p>
-					<p>P: +56 9 5117 7975</p>
-					<a href="mailto:inscripciones@desafionlatam.com">inscripciones@desafionlatam.com</a>
-				</div>
-				<div class="subscribe">
-					<h3>Suscribete</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-					<form action="/action_page.php">
-						<input type="text" name="fname"  placeholder="Ingresa tu email..">
-						<input type="submit" value="Enviar">
-					</form>
-				</div>
+				<a class="boton" href="" target="_blank">Inscribete!</a>
+				<p>Vive la experiencia Desafío Latam!</p>		
 			</div>
 		</div>
-		<footer>DESAFIOLATAM 2016 - CURSO FULLSTACK G14</footer>
+	</section>
+	<div class="container" style="padding: 20px;">
+		<div class="contacto
+			col-md-offset-2 col-md-3 
+			col-sm-offset-2 col-sm-3
+			col-xs-offset-1 col-xs-11
+			">
+			<h3>Contacto</h3>
+			<b>Desafio Latam</b>
+			<p>Ezequias Allende 2361</p>
+			<p>P: +56 9 5117 7975</p>
+			<a href="mailto:inscripciones@desafionlatam.com">inscripciones@desafionlatam.com</a>
+		</div>
+		<div class="subscribe
+			col-md-5 col-sm-5 
+			col-xs-offset-1 col-xs-11">
+			<h3>Suscribete</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<form action="/action_page.php">
+				<input type="text" name="fname"  placeholder="Ingresa tu email..">
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
 	</div>
+	<footer>
+		<div class="container">	
+			DESAFIOLATAM 2016 - CURSO FULLSTACK G14
+		</div>
+	</footer>
 </body>
 </html>
