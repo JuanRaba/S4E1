@@ -26,6 +26,7 @@
 			background-image: url(images/bg.jpeg);
 			background-size: cover;
 			background-position: top;
+			border-bottom: 0;
 		}
 		header{
 			background-image: url(images/bg.jpeg);
@@ -33,7 +34,6 @@
 			background-position: center;
 			color: white;
 			padding: 10px;
-			height: 300px
 		}
 		.menu{
 			padding: 10px;
@@ -110,7 +110,7 @@
 	</style>
 </head>
 <body bgcolor="black">
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top ">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -125,15 +125,17 @@
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-	<div style="margin: auto;width: 800px;">
-		<header>
+	<header>
+		<div class="container">
 			<div class="bandacentrada" style="margin-top: 80px;">
 				<p style="font-size: 25px">COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</p>
 				<a class="boton" href="" target="_blank">Comienza acá!</a>
 				<a class="boton" id="botonverde" href="" target="_blank">Más info</a>
 				<p style="font-size: 10px">Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y Tú puedes ser uno!</p>
 			</div>
-		</header>
+		</div>
+	</header>
+	<div style="margin: auto;width: 800px;">
 		<div class="section1" >
 			<div  class="bandacentrada">
 				<b>EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</b>
