@@ -44,7 +44,8 @@ footer{
 	background-color: black;
 	color: white;
 	padding: 10px 15%;
-	clear: both
+	clear: both;
+	width: 100%
 }
 body{
 	font-size: 10px;
